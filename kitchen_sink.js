@@ -64,14 +64,14 @@ let people = [
 //    checkAge(people[index].name,people[index].age)
 //}
 
-function getLength(){
+function getLength(str){
     
+    var n=str.length;
+    if(n % 2 ==0){
+        console.log("The World is nice and even!");
+    } else {
+        console.log("The world is an odd place!");
+    };
 };
-console.log(getLength("Hello World!"))
-if (getLength % 2 == 0){
-    console.log("The world is nice and even!");
-} else if (getLength % 2 ==1) {
-    console.log("The world is an odd place!");
-} else {
-    console.log("error");
-};
+
+getLength("Hello World!");
